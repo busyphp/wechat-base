@@ -24,7 +24,7 @@
 	"extra"       : {
 		"busyphp" : {
 			"config"   : {
-				"oauth" : "src/config.php"
+				"wechat" : "src/config.php"
 			}
 		}
 	},
