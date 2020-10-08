@@ -47,7 +47,13 @@ return [
             //TextMessageEvent::class     => '',
             //VideoMessageEvent::class    => '',
             //VoiceMessageEvent::class    => '',
-        ]
+        ],
+        
+        // 管理菜单分组
+        'admin_module'     => 'system',
+        
+        // 管理菜单控制器
+        'admin_control'    => 'wechat',
     ],
     
     
