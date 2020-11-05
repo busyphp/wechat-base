@@ -72,7 +72,7 @@ return [
         
         // 微信内部JS支付
         //'js'     => [
-        //    'type'          => PayType::WECHAT_JS,
+        //    'type'          => '',
         //    'app_id'        => '',
         //    'pay_key'       => '',
         //    'mch_id'        => '',
@@ -108,7 +108,19 @@ return [
         
         // APP端支付
         //'app'    => [
-        //    'type'          => PayType::WECHAT_APP,
+        //    'type'          => '',
+        //    'app_id'        => '',
+        //    'pay_key'       => '',
+        //    'mch_id'        => '',
+        //    'ssl_cert_path' => app()->getRootPath() . 'config/cert/wechat/apiclient_cert.p12',
+        //    'ssl_key_path'  => app()->getRootPath() . 'config/cert/wechat/apiclient_key.pem',
+        //    'ca_cert_path'  => app()->getRootPath() . 'config/cert/wechat/rootca.pem',
+        //]
+        
+        
+        // 小程序端支付
+        //'mini'    => [
+        //    'type'          => '',
         //    'app_id'        => '',
         //    'pay_key'       => '',
         //    'mch_id'        => '',
