@@ -57,6 +57,16 @@ return [
     ],
     
     
+    // 微信小程序配置
+    'mini'   => [
+        // 小程序 App Id
+        'app_id'     => '',
+        
+        // 小程序 App Secret
+        'app_secret' => '',
+    ],
+    
+    
     // 支付配置
     'pay'    => [
         
