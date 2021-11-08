@@ -2,8 +2,8 @@
 /**
  * 微信相关配置
  * @author busy^life <busy.life@qq.com>
- * @copyright (c) 2015--2019 ShanXi Han Tuo Technology Co.,Ltd. All rights reserved.
- * @version $Id: 2020/10/8 下午11:58 上午 config.php $
+ * @copyright (c) 2015--2021 ShanXi Han Tuo Technology Co.,Ltd. All rights reserved.
+ * @version $Id: 2021/11/8 下午11:50 config.php $
  */
 
 return [
@@ -47,13 +47,7 @@ return [
             //TextMessageEvent::class     => '',
             //VideoMessageEvent::class    => '',
             //VoiceMessageEvent::class    => '',
-        ],
-        
-        // 管理菜单分组
-        'admin_module'     => 'system',
-        
-        // 管理菜单控制器
-        'admin_control'    => 'wechat',
+        ]
     ],
     
     

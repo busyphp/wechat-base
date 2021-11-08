@@ -7,9 +7,8 @@ use BusyPHP\App;
 /**
  * 微信配置
  * @author busy^life <busy.life@qq.com>
- * @copyright (c) 2015--2019 ShanXi Han Tuo Technology Co.,Ltd. All rights reserved.
- * @version $Id: 2020/11/5 下午7:22 下午 WeChatConfig.php $
- * @property App $app;
+ * @copyright (c) 2015--2021 ShanXi Han Tuo Technology Co.,Ltd. All rights reserved.
+ * @version $Id: 2021/11/8 下午11:49 WeChatConfig.php $
  */
 trait WeChatConfig
 {
@@ -24,12 +23,13 @@ trait WeChatConfig
      */
     public function getConfig(string $name, $default = null)
     {
+        $app = App::getInstance();
         if (!$this->isLoadConfig) {
-            $this->app->config->load($this->app->getRootPath() . 'config' . DIRECTORY_SEPARATOR . 'extend' . DIRECTORY_SEPARATOR . 'wechat.php', 'wechat');
+            $app->config->load($app->getRootPath() . 'config' . DIRECTORY_SEPARATOR . 'extend' . DIRECTORY_SEPARATOR . 'wechat.php', 'wechat');
             
             $this->isLoadConfig = true;
         }
         
-        return $this->app->config->get('wechat.' . $name, $default);
+        return $app->config->get('wechat.' . $name, $default);
     }
 }

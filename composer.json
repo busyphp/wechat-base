@@ -1,17 +1,17 @@
 {
 	"name"        : "busyphp/wechat-base",
 	"type"        : "library",
-	"description" : "",
+	"description" : "微信基本库",
 	"authors"     : [
 		{
 			"name"  : "busy^life",
 			"email" : "busy.life@qq.com"
 		}
 	],
-	"license"     : "Apache-2.0",
+	"license"     : "CC-BY-NC-4.0",
 	"require"     : {
 		"php"             : ">=7.1.0",
-		"busyphp/busyphp" : "^3.0"
+		"busyphp/busyphp" : "^6.0"
 	},
 	"require-dev" : {
 		"symfony/var-dumper" : "^4.2"
@@ -23,7 +23,7 @@
 	},
 	"extra"       : {
 		"busyphp" : {
-			"config"   : {
+			"config" : {
 				"wechat" : "src/config.php"
 			}
 		}
