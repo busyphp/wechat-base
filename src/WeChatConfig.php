@@ -12,7 +12,7 @@ use BusyPHP\App;
  */
 trait WeChatConfig
 {
-    private $isLoadConfig = false;
+    private static $isLoadConfig = false;
     
     
     /**
@@ -24,10 +24,10 @@ trait WeChatConfig
     public function getConfig(string $name, $default = null)
     {
         $app = App::getInstance();
-        if (!$this->isLoadConfig) {
+        if (!self::$isLoadConfig) {
             $app->config->load($app->getRootPath() . 'config' . DIRECTORY_SEPARATOR . 'extend' . DIRECTORY_SEPARATOR . 'wechat.php', 'wechat');
             
-            $this->isLoadConfig = true;
+            self::$isLoadConfig = true;
         }
         
         return $app->config->get('wechat.' . $name, $default);
