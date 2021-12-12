@@ -53,11 +53,40 @@ return [
     
     // 微信小程序配置
     'mini'   => [
+        // 小程序名称
+        'name'           => '',
+        
         // 小程序 App Id
-        'app_id'     => '',
+        'app_id'         => '',
         
         // 小程序 App Secret
-        'app_secret' => '',
+        'app_secret'     => '',
+
+        // 小程序 令牌(Token)
+        'token'          => '',
+
+        // todo 暂无意义
+        // 消息加解密密钥 (EncodingAESKey)
+        'encodingAESKey' => '',
+        
+        // 多小程序配置
+        'multi'          => [
+            '小程序标识' => [
+                'name'           => '',
+                'app_id'         => '',
+                'app_secret'     => '',
+                'token'          => '',
+                'encodingAESKey' => '',
+            ],
+        ],
+        
+        // 请参考对于类中的描述绑定自己的Event即可
+        'listen'         => [
+            // UserEnterTempSessionEvent::class => '',
+            // MiniProgramPageEvent::class      => '',
+            // TextEvent::class                 => '',
+            // ImageEvent::class                => '',
+        ]
     ],
     
     
