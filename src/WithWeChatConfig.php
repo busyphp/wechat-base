@@ -11,7 +11,7 @@ use BusyPHP\App;
  * @version $Id: 2022/2/20 3:21 PM WithWeChatConfig.php $
  * @property App $app
  */
-class WithWeChatConfig
+trait WithWeChatConfig
 {
     /**
      * 获取配置
